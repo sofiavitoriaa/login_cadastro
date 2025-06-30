@@ -12,8 +12,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    color: #333;
+    background: linear-gradient(to right, #52796f, #2f3e46);
+    color: #2f3e46;
 }
 
 .container{
@@ -24,7 +24,7 @@ body{
     width: 100%;
     max-width: 450px;
     padding: 30px;
-    background: #fff;
+    background: #84a98c;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -43,31 +43,31 @@ h2{
 input, select{
     width: 100%;
     padding: 12px;
-    background: #eee;
+    background: #cad2c5;
     border-radius: 6px;
     border: none;
     outline: none;
     font-size: 16px;
-    color: #333;
+    color: #2f3e46;
     margin-bottom: 20px;
 }
 
 button{
     width: 100%;
     padding: 12px;
-    background: #7494ec;
+    background: #2f3e46;
     border-radius: 6px;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #fff;
+    color: #cad2c5;
     font-weight: 500;
     margin-bottom: 20px;
     transition: 0.5s;
 }
 
 button:hover{
-    background: #6884d3;
+    background: #354f52;
 }
 
 p{
@@ -77,7 +77,7 @@ p{
 }
 
 p a{
-    color: #7494ec;
+    color: #354f52;
     text-decoration: none;
 }
 
