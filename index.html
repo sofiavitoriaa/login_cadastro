@@ -3,21 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="shortcut icon" href="src/google-earth.png" type="image/x-icon">
     <link rel="stylesheet" href="src/style.css">
+    <title>Login e Cadastro</title>
 </head>
 <body>
     <div class="container">
         <div class="form-box active" id="login-form">
-            <form action="login.php" method="post">
-
+            <form action="">
                 <h2>Login</h2>
-
                 <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Senha" required>
+                <input type="senha" name="senha" placeholder="Senha" required>
                 <button type="submit" name="login">Login</button>
-                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                <p>Não tem uma conta? <a href="#" onclick="showForm('register-form')">Cadastre-se</a></p>
             </form>
         </div>
+
+        <div class="form-box" id="register-form">
+            <form action="">
+                <h2>Cadastre-se</h2>
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="senha" name="senha" placeholder="Senha" required>
+                <select name="funcao" required>
+                    <option value="">Selecione sua função:</option>
+                    <option value="user">Usuário</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit" name="register">Cadastrar</button>
+                <p> Já possui conta? <a href="#" onclick="showForm('login-form')">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
 </body>
 </html>
